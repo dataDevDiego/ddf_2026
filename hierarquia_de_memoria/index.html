@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hierarquia de Memória</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="topo">
+    <header>
+        <img src="img/logo.png" alt="Logo de Arquitetura de Computadores" class="logo" width="100" height="100">
+        <h1>Arquitetura e Sistemas Digitais</h1>
+    </header>
+
+    <nav class="menu-principal">
+        <a href="#introducao">Hierarquia de Memória</a>
+        <a href="#galeria">Galeria de Componentes</a>
+        <a href="#introducao">Registradores e Cache</a>
+        <a href="#galeria">Referências</a>
+    </nav>
+
+    <main>
+        <section id="introducao">
+            <h2>Compreendendo a Hierarquia de Memória</h2>
+            <p>A hierarquia de memória é uma organização estrutural baseada no princípio da localidade, projetada para otimizar o tempo de acesso aos dados e o custo de armazenamento em sistemas digitais. O objetivo central é fornecer ao processador a ilusão de uma memória tão rápida quanto a tecnologia mais veloz disponível, e tão ampla quanto a tecnologia de armazenamento mais barata.</p>
+            
+            <figure>
+                <img src="img/piramide.png" alt="Esquema em pirâmide da hierarquia de memória" class="img-responsiva" width="600" height="400">
+                <figcaption>Esquema clássico da pirâmide de memória.</figcaption>
+            </figure>
+
+            <h3 id="registradores">O Papel dos Registradores e da Memória Cache</h3>
+            <p>No topo da hierarquia, operando na mesma velocidade do processador, encontram-se os registradores. Eles armazenam os dados imediatamente necessários para a execução das instruções. Logo abaixo, a memória Cache atua como um buffer temporário de alta velocidade, reduzindo a latência de acesso à memória principal. O trânsito de dados entre essas camadas é fundamental para evitar ciclos de ociosidade na CPU.</p>
+
+            <figure>
+                <img src="img/cache.png" alt="Diagrama de blocos do acesso à cache" class="img-responsiva" width="600" height="400">
+                <figcaption>Mapeamento e acesso em memória Cache.</figcaption>
+            </figure>
+            
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Componentes de Hardware</h2>
+            <div class="galeria-flex">
+                <img src="img/sram.png" alt="Chip de memória SRAM" width="300" height="300" class="item-galeria">
+                <img src="img/dram.png" alt="Módulo de memória DRAM" width="300" height="300" class="item-galeria">
+                <img src="img/ssd.png" alt="Unidade de Estado Sólido SSD NVMe" width="300" height="300" class="item-galeria">
+                <img src="img/hdd.png" alt="Disco Rígido Magnético interno" width="300" height="300" class="item-galeria">
+            </div>
+            
+            <h2>Referências Utilizadas</h2>
+            <ul>
+                <li>STALLINGS, William. <b>Arquitetura e Organização de Computadores</b>. 10ª ed.</li>
+                <li>PATTERSON, David A.; HENNESSY, John L. <b>Organização e Projeto de Computadores</b>. 5ª ed.</li>
+            </ul>
+
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diego Veiga Silva, Design de Interfaces - IFRS - Rio Grande.</p>
+    </footer>
+</body>
+</html>

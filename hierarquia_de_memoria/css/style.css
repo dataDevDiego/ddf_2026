@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --cor-fundo: #f4f6f9;
+    --cor-texto: #2c3e50;
+    --cor-destaque: #2980b9;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+.logo {
+    width: clamp(80px, 15vw, 150px);
+    height: auto;
+    border-radius: 50%;
+}
+
+nav.menu-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    background-color: #ecf0f1;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+nav.menu-principal a {
+    color: var(--cor-destaque);
+    font-weight: bold;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    padding: 5px 10px;
+}
+
+nav.menu-principal a:hover {
+    color: #1a5276;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+h2, h3 {
+    color: var(--cor-destaque);
+}
+
+p {
+    text-align: justify;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    margin-bottom: 1.5rem;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.img-responsiva {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-galeria {
+    width: clamp(150px, 40vw, 300px);
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #bdc3c7;
+}
+
+.link-topo {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 2rem;
+    border-top: 2px solid var(--cor-destaque);
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
