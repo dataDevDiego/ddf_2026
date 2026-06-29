@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Arquitetura Computacional e Sistemas Digitais</title>
+    <meta name="description" content="Aprenda conceitos fundamentais sobre arquitetura computacional. Explore componentes, registradores e funcionamento estrutural de hardwares.">
+    <link rel="canonical" href="https://datadevdiego.github.io/ddf_2026/hierarquia_de_memoriaOTIMIZADO4/">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <meta property="og:title" content="Arquitetura Computacional e Sistemas Digitais">
+    <meta property="og:description" content="Compreenda o funcionamento estrutural físico da computação.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.webp">
+    <meta property="og:url" content="https://datadevdiego.github.io/ddf_2026/hierarquia_de_memoriaOTIMIZADO4/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preload" as="image" href="img/logo.webp">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body id="topo">
+    <header>
+        <img src="img/logo.webp" srcset="img/logo.webp 1x" alt="Símbolo arquitetural contendo circuitos" class="logo" width="150" height="150" fetchpriority="high" loading="eager">
+        <h1>Arquitetura Computacional</h1>
+    </header>
+
+    <nav class="menu-principal">
+        <a href="#introducao">Conceitos Iniciais</a>
+        <a href="#galeria">Componentes Físicos</a>
+        <a href="#formulario">Dúvidas Técnicas</a>
+        <a href="#mural">Mural do Laboratório</a>
+    </nav>
+
+    <main>
+        <section id="introducao">
+            <h2>Níveis Físicos de Componentes</h2>
+            <p>O armazenamento em sistemas digitais possui divisões físicas. A organização distribui os componentes por velocidade operacional. Processadores modernos realizam bilhões de cálculos por segundo. O hardware precisa fornecer dados rapidamente para a Unidade Lógica e Aritmética. A estruturação resolve a diferença de latência entre as partes. Existem camadas distintas no funcionamento computacional.</p>
+            
+            <p>Os circuitos mais rápidos possuem custo financeiro elevado. Os componentes lentos custam menos e guardam mais bits. O projetista de hardware equilibra custo monetário e desempenho técnico. Esta estrutura obedece ao princípio da localidade temporal. A localidade espacial também determina o funcionamento eletrônico. Os dados acessados recentemente tendem a ser processados novamente. Os endereços próximos também serão lidos em breve.</p>
+            
+            <figure>
+                <img src="img/piramide.webp" srcset="img/piramide.webp 1x" alt="Esquema clássico estrutural." class="img-responsiva" width="600" height="400" loading="eager">
+                <figcaption>Esquema clássico da organização computacional.</figcaption>
+            </figure>
+
+            <h3>Função dos Registradores e da Cache</h3>
+            <p>Os registradores ficam dentro do processador principal. Eles guardam os bits durante as operações matemáticas. Sua capacidade máxima atinge poucos bytes. A velocidade de resposta é instantânea. Logo abaixo, a memória cache fica próxima aos núcleos de processamento. Ela serve como intermediária rápida para a placa principal. Os projetistas dividem a cache em três níveis físicos de integração.</p>
+
+            <p>O nível um possui tamanho menor e velocidade máxima. O nível três possui tamanho maior e atende todos os núcleos disponíveis. A RAM armazena os programas abertos em plena execução. Os circuitos dinâmicos perdem as informações sem energia elétrica contínua. Os discos rígidos guardam os arquivos permanentemente através de magnetismo. As unidades de estado sólido substituem os discos antigos oferecendo grande capacidade.</p>
+            
+            <p>Sistemas digitais utilizam circuitos lógicos para funcionar corretamente. O mapa de Karnaugh simplifica essas expressões booleanas complexas. A simplificação reduz a quantidade de portas lógicas físicas aplicadas. Menos portas lógicas resultam em componentes eletrônicos eficientes. O consumo de energia elétrica diminui consideravelmente com isso. O desempenho térmico do chip melhora com essa otimização direta.</p>
+
+            <figure>
+                <img src="img/cache.webp" srcset="img/cache.webp 1x" alt="Diagrama em blocos demonstrando o mapeamento" class="img-responsiva" width="600" height="400" loading="eager">
+                <figcaption>Mapeamento veloz em hardwares temporários.</figcaption>
+            </figure>
+            
+            <br>
+            <a href="#topo" class="link-topo">Ir para o início</a>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria dos Componentes</h2>
+            <div class="galeria-flex">
+                <img src="img/sram.webp" srcset="img/sram.webp 1x" alt="Placa impressa exibindo um Chip SRAM" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/dram.webp" srcset="img/dram.webp 1x" alt="Módulo DRAM verde" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/ssd.webp" srcset="img/ssd.webp 1x" alt="Unidade SSD NVMe com conectores dourados" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/hdd.webp" srcset="img/hdd.webp 1x" alt="Interior mecânico num Disco Rígido" width="300" height="300" class="item-galeria" loading="lazy">
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Retornar</a>
+        </section>
+
+        <section id="formulario">
+            <h2>Envie suas Dúvidas</h2>
+            <div class="grid-form">
+                <img src="img/contato-lab.webp" srcset="img/contato-lab.webp 1x" alt="Estudante trabalhando num laboratório computacional" width="600" height="800" class="img-responsiva img-form" loading="lazy">
+                
+                <form action="#" method="POST" class="formulario-padrao">
+                    <fieldset>
+                        <legend>Formulário de Contato Acadêmico</legend>
+                        
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail Acadêmico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="data">Data Submetida:</label>
+                        <input type="date" id="data" name="data" required>
+
+                        <label for="topico">Tópico Principal:</label>
+                        <select id="topico" name="topico">
+                            <option value="registradores">Registradores</option>
+                            <option value="karnaugh">Mapas Karnaugh</option>
+                            <option value="hierarquia">Sistemas Digitais</option>
+                            <option value="outros">Outros Elementos Físicos</option>
+                        </select>
+
+                        <label for="mensagem">Detalhe sua dúvida estrutural:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Desejo receber os informativos sobre testes.</label>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Submeter Formulário</button>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Subir página</a>
+        </section>
+
+        <section id="mural" class="secao-mural-container">
+            <h2>Mural do Laboratório</h2>
+            <div class="grid-mural">
+                <img src="img/painel1.webp" srcset="img/painel1.webp 1x" alt="Visão ampla das bancadas no laboratório computacional" width="600" height="600" class="item-mural destaque-mural" loading="lazy">
+                <img src="img/painel2.webp" srcset="img/painel2.webp 1x" alt="Osciloscópio ligado" width="300" height="300" class="item-mural" loading="lazy">
+                <img src="img/painel3.webp" srcset="img/painel3.webp 1x" alt="Estudantes analisando portas lógicas" width="300" height="300" class="item-mural" loading="lazy">
+                <img src="img/painel4.webp" srcset="img/painel4.webp 1x" alt="Protoboard com fiação exposta" width="300" height="300" class="item-mural" loading="lazy">
+                <img src="img/painel5.webp" srcset="img/painel5.webp 1x" alt="Placa mãe detalhada" width="300" height="300" class="item-mural" loading="lazy">
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Início da página</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Diego Veiga Silva, Design para Interfaces - IFRS.</p>
+        <p>Referências documentais: STALLINGS (10ª ed.) | PATTERSON e HENNESSY (5ª ed.)</p>
+        
+        <div style="margin-top: 15px;">
+            <a href="https://github.com/datadevdiego" target="_blank" rel="noopener noreferrer" style="color: var(--cor-destaque); text-decoration: none; margin: 0 10px;">Perfil no GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: var(--cor-destaque); text-decoration: none; margin: 0 10px;">Perfil Profissional</a>
+            <a href="mailto:exemplo@ifrs.edu.br" style="color: var(--cor-destaque); text-decoration: none; margin: 0 10px;">Endereço de E-mail</a>
+        </div>
+    </footer>
+</body>
+</html>
