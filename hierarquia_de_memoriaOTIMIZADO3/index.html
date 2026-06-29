@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Arquitetura Computacional: Hierarquia do Armazenamento</title>
+    <meta name="description" content="Aprenda conceitos fundamentais sobre arquitetura computacional. Explore a estrutura informacional, registradores e funcionamento do hardware.">
+    <link rel="canonical" href="https://datadevdiego.github.io/ddf_2026/hierarquia_de_memoriaOTIMIZADO3/">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <meta property="og:title" content="Arquitetura Computacional">
+    <meta property="og:description" content="Compreenda o funcionamento dos registradores, cache e armazenamento principal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.webp">
+    <meta property="og:url" content="https://datadevdiego.github.io/ddf_2026/hierarquia_de_memoriaOTIMIZADO3/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preload" as="image" href="img/logo.webp">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body id="topo">
+    <header>
+        <img src="img/logo.webp" srcset="img/logo.webp 1x" alt="Símbolo arquitetural contendo circuitos" class="logo" width="150" height="150" fetchpriority="high" loading="eager">
+        <h1>Arquitetura Computacional</h1>
+    </header>
+
+    <nav class="menu-principal">
+        <a href="#introducao">Conceitos Iniciais</a>
+        <a href="#galeria">Componentes Físicos</a>
+        <a href="#formulario">Dúvidas Técnicas</a>
+        <a href="#mural">Mural do Laboratório</a>
+    </nav>
+
+    <main>
+        <section id="introducao">
+            <h2>Níveis do Armazenamento</h2>
+            <p>A estrutura física otimiza o acesso aos dados. Ela também reduz gastos estruturais nos computadores. Essa arquitetura usa princípios espaciais e temporais. O objetivo central envolve fornecer velocidade elevada. Ao mesmo tempo, busca manter ampla capacidade. Para isso, utiliza opções mais econômicas disponíveis.</p>
+            
+            <p>Durante os processos, software e hardware trabalham juntos. Eles gerenciam as transferências entre os diferentes níveis. Essa divisão inclui partes voláteis e não-voláteis. O desempenho geral computacional depende muito dessa organização física.</p>
+            
+            <figure>
+                <img src="img/piramide.webp" srcset="img/piramide.webp 1x" alt="Esquema clássico estrutural." class="img-responsiva" width="600" height="400" loading="eager">
+                <figcaption>Esquema clássico da pirâmide computacional.</figcaption>
+            </figure>
+
+            <h3>Função dos Registradores e Cache</h3>
+            <p>No topo estrutural ficam os registradores. Eles operam na mesma frequência processadora. Estes circuitos retêm operandos imediatamente necessários. A Unidade Lógica utiliza essas variáveis rapidamente. O acesso ocorre em nanossegundos.</p>
+
+            <p>Logo abaixo, a Cache atua como buffer temporário ultraveloz. Sua função principal envolve reduzir atrasos. Ela agiliza o acesso à placa principal. O tráfego informacional evita ciclos ociosos na CPU. Camadas L1, L2 e L3 possuem tamanhos distintos. Elas entregam respostas específicas para cada núcleo processador.</p>
+            
+            <p>Abaixo da Cache, encontramos a RAM. Ela retém programas em plena execução. Na base estrutural, situam-se discos rígidos magnéticos. Unidades SSD também compõem essa base. Eles oferecem ampla retenção permanente. O custo por byte cai bastante. No entanto, possuem maior latência na leitura.</p>
+
+            <figure>
+                <img src="img/cache.webp" srcset="img/cache.webp 1x" alt="Diagrama em blocos demonstrando o mapeamento" class="img-responsiva" width="600" height="400" loading="eager">
+                <figcaption>Mapeamento veloz em hardware temporário.</figcaption>
+            </figure>
+            
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria dos Componentes Físicos</h2>
+            <div class="galeria-flex">
+                <img src="img/sram.webp" srcset="img/sram.webp 1x" alt="Placa impressa exibindo um Chip SRAM" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/dram.webp" srcset="img/dram.webp 1x" alt="Módulo DRAM verde" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/ssd.webp" srcset="img/ssd.webp 1x" alt="Unidade SSD NVMe com conectores dourados" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/hdd.webp" srcset="img/hdd.webp 1x" alt="Interior mecânico num Disco Rígido" width="300" height="300" class="item-galeria" loading="lazy">
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+        <section id="formulario">
+            <h2>Envie suas Dúvidas</h2>
+            <div class="grid-form">
+                <img src="img/contato-lab.webp" srcset="img/contato-lab.webp 1x" alt="Estudante trabalhando num laboratório computacional" width="600" height="800" class="img-responsiva img-form" loading="lazy">
+                
+                <form action="#" method="POST" class="formulario-padrao">
+                    <fieldset>
+                        <legend>Dados e Pergunta</legend>
+                        
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail Acadêmico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="data">Data Submetida:</label>
+                        <input type="date" id="data" name="data" required>
+
+                        <label for="topico">Tópico Principal:</label>
+                        <select id="topico" name="topico">
+                            <option value="registradores">Registradores</option>
+                            <option value="karnaugh">Mapas Karnaugh</option>
+                            <option value="hierarquia">Estrutura Armazenadora</option>
+                            <option value="outros">Outros Sistemas Digitais</option>
+                        </select>
+
+                        <label for="mensagem">Detalhe sua dúvida:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Desejo receber atualizações sobre monitorias.</label>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Dúvida</button>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+        <section id="mural" class="secao-mural-container">
+            <h2>Mural do Laboratório</h2>
+            <div class="grid-mural">
+                <img src="img/painel1.webp" srcset="img/painel1.webp 1x" alt="Visão ampla das bancadas no laboratório computacional" width="600" height="600" class="item-mural destaque-mural" loading="lazy">
+                <img src="img/painel2.webp" srcset="img/painel2.webp 1x" alt="Osciloscópio ligado" width="300" height="300" class="item-mural" loading="lazy">
+                <img src="img/painel3.webp" srcset="img/painel3.webp 1x" alt="Estudantes analisando portas lógicas" width="300" height="300" class="item-mural" loading="lazy">
+                <img src="img/painel4.webp" srcset="img/painel4.webp 1x" alt="Protoboard com fiação exposta" width="300" height="300" class="item-mural" loading="lazy">
+                <img src="img/painel5.webp" srcset="img/painel5.webp 1x" alt="Placa mãe detalhada" width="300" height="300" class="item-mural" loading="lazy">
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Diego Veiga Silva, Design para Interfaces - IFRS - Rio Grande.</p>
+        <p>Referências utilizadas: STALLINGS (10ª ed.) | PATTERSON & HENNESSY (5ª ed.)</p>
+        
+        <div style="margin-top: 15px;">
+            <a href="https://github.com/datadevdiego" target="_blank" rel="noopener noreferrer" style="color: var(--cor-destaque); text-decoration: none; margin: 0 10px;">Perfil no GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: var(--cor-destaque); text-decoration: none; margin: 0 10px;">LinkedIn</a>
+            <a href="mailto:exemplo@ifrs.edu.br" style="color: var(--cor-destaque); text-decoration: none; margin: 0 10px;">Compartilhar por E-mail</a>
+        </div>
+    </footer>
+</body>
+</html>
