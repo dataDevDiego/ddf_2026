@@ -1,0 +1,71 @@
+header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+main {
+    display: block;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 20px;
+    background-color: var(--cor-fundo-sessao);
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+}
+
+/* Layouts Flex e Grid */
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.grid-mural {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 15px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 2rem;
+    border-top: 2px solid var(--cor-destaque);
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+}
+
+/* Media Queries para Telas Grandes */
+@media (min-width: 900px) {
+    .grid-form {
+        grid-template-columns: 1fr 1fr; /* Imagem e Form lado a lado */
+    }
+
+    .secao-mural-container {
+        width: 80%; /* Cobre pelo menos 70% da tela */
+        margin: 0 auto 3rem auto;
+    }
+
+    .grid-mural {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .destaque-mural {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
