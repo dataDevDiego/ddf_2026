@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Portal educacional sobre Arquitetura de Computadores e Hierarquia de Memória.">
+    <meta property="og:title" content="Arquitetura e Sistemas Digitais">
+    <meta property="og:description" content="Compreenda o funcionamento de registradores, cache e memória principal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.png">
+
+    <title>Hierarquia de Memória</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body id="topo">
+    <header>
+        <img src="img/logo.png" alt="Logo de Arquitetura de Computadores contendo circuitos integrados" class="logo" width="100" height="100" fetchpriority="high">
+        <h1>Arquitetura e Sistemas Digitais</h1>
+    </header>
+
+    <nav class="menu-principal">
+        <a href="#introducao">Hierarquia de Memória</a>
+        <a href="#galeria">Componentes</a>
+        <a href="#formulario">Dúvidas</a>
+        <a href="#mural">Mural de Laboratório</a>
+    </nav>
+
+    <main>
+        <section id="introducao">
+            <h2>Compreendendo a Hierarquia de Memória</h2>
+            <p>A hierarquia de memória é uma organização estrutural baseada no princípio da localidade, projetada para otimizar o tempo de acesso aos dados e o custo de armazenamento em sistemas digitais. O objetivo central é fornecer ao processador a ilusão de uma memória tão rápida quanto a tecnologia mais veloz disponível, e tão ampla quanto a tecnologia de armazenamento mais barata.</p>
+            
+            <figure>
+                <img src="img/piramide.png" alt="Esquema em pirâmide demonstrando a hierarquia de memória, com registradores no topo" class="img-responsiva" width="600" height="400">
+                <figcaption>Esquema clássico da pirâmide de memória.</figcaption>
+            </figure>
+
+            <h3>O Papel dos Registradores e da Memória Cache</h3>
+            <p>No topo da hierarquia, operando na mesma velocidade do processador, encontram-se os registradores. Eles armazenam os dados imediatamente necessários para a execução das instruções. Logo abaixo, a memória Cache atua como um buffer temporário de alta velocidade, reduzindo a latência de acesso à memória principal. O trânsito de dados entre essas camadas é fundamental para evitar ciclos de ociosidade na CPU.</p>
+
+            <figure>
+                <img src="img/cache.png" alt="Diagrama de blocos demonstrando o mapeamento e acesso em memória Cache" class="img-responsiva" width="600" height="400" loading="lazy">
+                <figcaption>Mapeamento e acesso em memória Cache.</figcaption>
+            </figure>
+            
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Componentes de Hardware</h2>
+            <div class="galeria-flex">
+                <img src="img/sram.png" alt="Placa de circuito exibindo um Chip de memória SRAM" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/dram.png" alt="Módulo de memória DRAM verde" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/ssd.png" alt="Unidade de Estado Sólido SSD NVMe com conectores dourados" width="300" height="300" class="item-galeria" loading="lazy">
+                <img src="img/hdd.png" alt="Interior mecânico de um Disco Rígido Magnético" width="300" height="300" class="item-galeria" loading="lazy">
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+        <section id="formulario">
+            <h2>Envie suas Dúvidas</h2>
+            <div class="grid-form">
+                <img src="img/contato-lab.webp" alt="Estudante trabalhando em um laboratório de sistemas digitais" class="img-responsiva img-form" loading="lazy">
+                
+                <form action="#" method="POST" class="formulario-padrao">
+                    <fieldset>
+                        <legend>Dados e Pergunta</legend>
+                        
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail Acadêmico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="data">Data de Submissão:</label>
+                        <input type="date" id="data" name="data" required>
+
+                        <label for="topico">Tópico Principal:</label>
+                        <select id="topico" name="topico">
+                            <option value="registradores">Registradores</option>
+                            <option value="karnaugh">Mapa de Karnaugh</option>
+                            <option value="hierarquia">Hierarquia de Memória</option>
+                            <option value="outros">Outros Sistemas Digitais</option>
+                        </select>
+
+                        <label for="mensagem">Detalhe sua dúvida:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Desejo receber atualizações sobre monitorias.</label>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Dúvida</button>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+        <section id="mural" class="secao-mural-container">
+            <h2>Mural do Laboratório</h2>
+            <div class="grid-mural">
+                <img src="img/painel1.webp" alt="Visão ampla das bancadas do laboratório de arquitetura" class="item-mural destaque-mural" loading="lazy">
+                <img src="img/painel2.webp" alt="Detalhe de osciloscópio ligado" class="item-mural" loading="lazy">
+                <img src="img/painel3.webp" alt="Estudantes analisando portas lógicas" class="item-mural" loading="lazy">
+                <img src="img/painel4.webp" alt="Protoboard com fiação exposta" class="item-mural" loading="lazy">
+                <img src="img/painel5.webp" alt="Placa mãe detalhada" class="item-mural" loading="lazy">
+            </div>
+            <br>
+            <a href="#topo" class="link-topo">Voltar ao topo</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Diego Veiga Silva, Design de Interfaces - IFRS - Rio Grande.</p>
+        <p>Referências utilizadas: STALLINGS (10ª ed.) | PATTERSON & HENNESSY (5ª ed.)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+:root {
+    --cor-fundo: #f4f6f9;
+    --cor-texto: #2c3e50;
+    --cor-destaque: #2980b9;
+    --cor-borda: #cccccc;
+    --cor-borda-escura: #bdc3c7;
+    --cor-fundo-sessao: #ffffff;
+    --cor-fundo-menu: #ecf0f1;
+    --cor-texto-secundario: #7f8c8d;
+    --fonte-principal: "Roboto", sans-serif;
+    
+    scroll-behavior: smooth;
+}
