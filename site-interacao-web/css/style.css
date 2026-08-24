@@ -1,0 +1,81 @@
+@import url("variables.css");
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container {
+  width: calc(100% - 2rem);
+  max-width: 1150px;
+  margin: auto;
+}
+.site-header {
+  background: var(--primary);
+  color: white;
+  padding: 1.3rem 0;
+}
+.site-header h1 {
+  margin: 0;
+}
+.site-nav {
+  background: #083344;
+}
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.site-nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+}
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background: var(--secondary);
+}
+main {
+  padding: 2rem 0;
+  min-height: 65vh;
+}
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.site-footer {
+  background: #083344;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.site-footer p {
+  margin: 0.2rem;
+}
+@media (max-width: 720px) {
+  .hero,
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .site-nav ul {
+    flex-direction: column;
+  }
+}
