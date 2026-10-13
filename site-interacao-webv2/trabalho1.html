@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor de menus</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/editor.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Portfólio de Design de Interação</h1>
+        <p>Trabalhos da disciplina</p>
+      </div>
+    </header>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Apresentação</a></li>
+          <li><a href="trabalho1.html">Trabalho 1</a></li>
+          <li><a href="trabalho2.html">Trabalho 2</a></li>
+          <li><a href="trabalho3.html">Trabalho 3</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="layout">
+          <section class="panel">
+            <h2>Editor de menus</h2>
+            <form id="editor">
+              <fieldset>
+                <legend>Itens</legend>
+                <div id="fields"></div>
+                <button type="button" class="button" id="add">
+                  Adicionar item</button
+                ><small class="help">De 1 a 8 itens.</small>
+              </fieldset>
+              <fieldset>
+                <legend>Imagem</legend>
+                <div class="field">
+                  <label for="imageFile">Inserir imagem</label
+                  ><input
+                    type="file"
+                    id="imageFile"
+                    accept="image/png,image/jpeg,image/gif,image/webp,image/svg+xml"
+                  /><small class="help"
+                    >PNG, JPEG, GIF, WebP ou SVG, até 2 MB.</small
+                  ><small
+                    id="imageMessage"
+                    class="help"
+                    aria-live="polite"
+                  ></small>
+                </div>
+                <div class="field">
+                  <input type="checkbox" id="showImage" checked /><label
+                    for="showImage"
+                    >Exibir imagem</label
+                  >
+                </div>
+                <div class="field">
+                  <label for="position">Posição</label
+                  ><select id="position">
+                    <option value="top">Acima</option>
+                    <option value="side">Ao lado</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Aparência</legend>
+                <div class="field">
+                  <label for="menuBg">Fundo do menu</label
+                  ><input type="color" id="menuBg" value="#164e63" />
+                </div>
+                <div class="field">
+                  <label for="itemBg">Fundo dos itens</label
+                  ><input type="color" id="itemBg" value="#0e7490" />
+                </div>
+                <div class="field">
+                  <label for="textColor">Cor do texto</label
+                  ><input type="color" id="textColor" value="#ffffff" />
+                </div>
+                <div class="field">
+                  <label for="borderColor">Cor da borda</label
+                  ><input type="color" id="borderColor" value="#083344" />
+                </div>
+                <div class="field">
+                  <label for="font">Fonte</label
+                  ><select id="font">
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Courier New">Courier New</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="weight">Peso do texto</label
+                  ><select id="weight">
+                    <option value="normal">Normal</option>
+                    <option value="bold">Negrito</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="size">Texto</label
+                  ><input type="range" id="size" min="12" max="28" value="16" />
+                </div>
+                <div class="field">
+                  <label for="border">Borda</label
+                  ><input type="range" id="border" min="0" max="8" value="1" />
+                </div>
+                <div class="field">
+                  <label for="radius">Arredondamento</label
+                  ><input type="range" id="radius" min="0" max="30" value="6" />
+                </div>
+                <div class="field">
+                  <label for="direction">Distribuição</label
+                  ><select id="direction">
+                    <option value="row">Horizontal</option>
+                    <option value="column">Vertical</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="gap">Espaçamento</label
+                  ><input type="range" id="gap" min="0" max="30" value="8" />
+                </div>
+                <div class="field">
+                  <label for="padding">Tamanho dos itens</label
+                  ><input
+                    type="range"
+                    id="padding"
+                    min="4"
+                    max="30"
+                    value="12"
+                  />
+                </div>
+                <div class="field">
+                  <label for="menuPadding">Espaço interno do menu</label
+                  ><input
+                    type="range"
+                    id="menuPadding"
+                    min="0"
+                    max="32"
+                    value="12"
+                  />
+                </div>
+                <div class="field">
+                  <label for="menuWidth">Largura do menu</label
+                  ><input
+                    type="range"
+                    id="menuWidth"
+                    min="40"
+                    max="100"
+                    value="100"
+                  />
+                </div>
+              </fieldset>
+            </form>
+          </section>
+          <section class="panel">
+            <h2>Menu gerado</h2>
+            <div class="preview">
+              <div id="wrapper" class="wrapper top">
+                <img id="menuImage" src="img/menu.svg" alt="Imagem do menu" />
+                <nav id="menuPreview" aria-label="Prévia do menu">
+                  <ul id="generated"></ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>Portfólio de Design de Interação</p>
+      <p>HTML, CSS e JavaScript.</p>
+    </footer>
+    <script src="js/editor.js"></script>
+  </body>
+</html>
